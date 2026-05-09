@@ -1,21 +1,125 @@
-body {
-  margin: 0;
-  font-family: Arial;
-  background: #f5f5f5;
+:root{
+  --primary:#198754;
+  --secondary:#ffc107;
+  --dark:#1f2937;
+  --light:#f8f9fa;
 }
 
-.hero {
-  background: #28a745;
-  color: white;
-  text-align: center;
-  padding: 80px 20px;
+body{
+  font-family:'Poppins',sans-serif;
+  background:#f7f7f7;
+  color:#333;
+  overflow-x:hidden;
 }
 
-button {
-  padding: 12px 20px;
-  margin: 10px;
-  background: #ffc107;
-  border: none;
-  cursor: pointer;
-  font-weight: bold;
+/* NAVBAR */
+.navbar{
+  background:rgba(25,135,84,.96);
+  backdrop-filter:blur(10px);
+  box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
+
+/* HERO */
+.carousel-item img{
+  height:100vh;
+  object-fit:cover;
+  filter:brightness(45%);
+}
+
+.hero-overlay{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  text-align:center;
+  color:white;
+}
+
+.hero-overlay h1{
+  font-size:4rem;
+}
+
+/* SECTIONS */
+section{
+  padding:100px 0;
+}
+
+.section-title{
+  font-size:2.5rem;
+  font-weight:700;
+  color:var(--primary);
+  text-align:center;
+}
+
+.section-subtitle{
+  text-align:center;
+  color:#666;
+  margin-bottom:60px;
+}
+
+/* CARDS */
+.card{
+  border:none;
+  border-radius:22px;
+  overflow:hidden;
+  box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+/* MISSION */
+.mission-box{
+  background:white;
+  border-radius:22px;
+  padding:45px;
+}
+
+/* TEAM */
+.team-member{
+  background:white;
+  border-radius:22px;
+  padding:35px;
+  text-align:center;
+}
+
+/* GALLERY */
+.gallery-img{
+  width:100%;
+  height:250px;
+  object-fit:cover;
+  border-radius:18px;
+}
+
+/* PARTNERS */
+.partner-logo{
+  max-height:90px;
+  filter:grayscale(100%);
+  opacity:.8;
+}
+
+/* DONATION */
+.donation-card{
+  background:white;
+  border-radius:25px;
+  padding:50px;
+}
+
+/* CONTACT */
+.contact-box{
+  background:white;
+  padding:50px;
+  border-radius:25px;
+}
+
+/* FOOTER */
+footer{
+  background:#1f2937;
+  color:white;
+  padding:50px 0;
+}
+
+/* FLOAT BUTTON */
+.floating-donate{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  z-index:9999;
 }
